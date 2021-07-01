@@ -1,7 +1,5 @@
 # Session 5 - Layout, Themes, and Widgets
 
-**View this in your browser: http://bit.ly/gswd-5**
-
 During this session we're going to make the blog more interactive, and look at how you can start adding complex layouts.
 
 ## 1. Widgets
@@ -11,6 +9,8 @@ Lets start with adding some interactive widgets to your blog. Choose one widget 
 
 Bootstrap has a large library of additional widgets available. See [Bootstrap components documentation page](https://getbootstrap.com/docs/4.3/components).
 
+Open layout-with-bootstrap.html.
+
 + **Add an image slideshow (carousel)**
 
 	An image carousel is a way of displaying a slideshow of images which can be browsed through. 
@@ -19,35 +19,35 @@ Bootstrap has a large library of additional widgets available. See [Bootstrap co
 
 	```html
 	<div class="bd-example">
-	  <div id="exampleCarousel" class="carousel slide" data-ride="carousel">
-	    <ol class="carousel-indicators">
-	      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-	      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-	    </ol>
-	    <div class="carousel-inner">
-	      <div class="carousel-item active">
-	        <img src="img/bg1.jpg" class="d-block w-100" alt="Description of picture">
-	        <div class="carousel-caption d-none d-md-block">
-	          <h5>First slide label</h5>
-	          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-	        </div>
-	      </div>
-	      <div class="carousel-item">
-	        <img src="img/bg2.jpg" class="d-block w-100" alt="Description of picture">
-	        <div class="carousel-caption d-none d-md-block">
-	          <h5>Second slide label</h5>
-	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	        </div>
-	      </div>
-	    <a class="carousel-control-prev" href="#exampleCarousel" role="button" data-slide="prev">
-	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="carousel-control-next" href="#exampleCarousel" role="button" data-slide="next">
-	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	  </div>
+		<div id="exampleCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			<li data-target="#exampleCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#exampleCarousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/bg1.jpg" class="d-block w-100" alt="Description of picture">
+				<div class="carousel-caption d-none d-md-block">
+				<h5>First slide label</h5>
+				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/bg2.jpg" class="d-block w-100" alt="Description of picture">
+				<div class="carousel-caption d-none d-md-block">
+				<h5>Second slide label</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#exampleCarousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#exampleCarousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</div>
 	```
 	Note: Bootstrap will automatically load and animate the slideshow and you don't need to add any additional javascript.
@@ -87,7 +87,11 @@ Bootstrap has a large library of additional widgets available. See [Bootstrap co
 	```
 	And tell your page to show it either when the page loads or when you click a button:-
 	```html
-	  <body onload="showToast()"> or <button onclick="showToast(); return false;"> 
+	  	<body onload="showToast()">
+	  
+		or
+		
+		<button onclick="showToast(); return false;">Toast!</button>
 	```
 	Have a think about how you could use this to give your users feedback.
 
@@ -135,7 +139,7 @@ So armed with this information lets copy our HTML to  make a two column layout :
 
 We don't always want to build our layouts from scratch as this is time consuming and we can make mistakes. A better idea is to base our design off of a pre-built theme and only customize the bits we care about.
 
-We've provided some themes for you to play about with. ==Please don't remove the copyright notices== as they're provided by third parties under this condition. You can get these themes by downloading the [themes zip file](https://princestrustcontent.blob.core.windows.net/coursecontent/Themes.zip?sv=2018-03-28&ss=b&srt=o&sp=r&se=2019-10-01T19:09:49Z&st=2019-08-13T11:09:49Z&spr=https&sig=4RIp/oijkrcaTN386XUa4tJ38TIj1/TPNeTf6TkXwCw=).
+We've provided some themes for you to play with. ==Please don't remove the copyright notices== as they're provided by third parties under this condition.  The Themes are available in the Themes folder under Session 5.
 
 ### The themes
 
@@ -153,5 +157,7 @@ We've provided some themes for you to play about with. ==Please don't remove the
 
 
 ### Exercises
+
+Have a look at some of the Themes, open index.html in each of the folders to see which ones appeal to you.
 
 Try and put some of your content into one of the pre-designed professional themes. 
