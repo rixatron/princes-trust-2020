@@ -1,20 +1,26 @@
 # Getting started with HTML tags
 
-**View this in your browser: http://bit.ly/gswd-2**
-
 ## What is an HTML tag?
 
-HTML tags are just a way of telling the computer to start doing something and stop doing something.  An opening tag (i.e. a tag that tells the computer to start doing something) is a word or character between `<` and `>` characters, sometimes called angle brackets like so:
+HTML tags are a way of telling the computer to start doing something and stop doing something.  An opening tag (i.e. a tag that tells the computer to start doing something) is a word or character between `<` and `>` characters, sometimes called angle brackets like so:
 
 ```HTML
 <em>
 ```
 
-"What the hell does 'em' tell a computer to start doing?" is a legitimate question to ask at this point.  Unfortunately the commands used in HTML are often very short which is great if you're typing them over and over but often useless in helping you understand what they do.  In this case 'em' stands for emphasis and will tell the computer to emphasise all the text that comes after it.
+"What the does 'em' tell a computer to start doing?" is a legitimate question to ask at this point.  Unfortunately the commands used in HTML are often very short which is great if you're typing them over and over but often useless in helping you understand what they do.  In this case 'em' stands for emphasis and will tell the computer to emphasise all the text that comes after it.
 
-"What the hell does emphasizing the text mean?" Is also a legitimate question to ask and the simplest way to answer is a practical demonstration
+"What the does emphasizing the text mean?" Is also a legitimate question to ask and the simplest way to answer is a practical demonstration
 
-*This is emphasized text* this is not.
+*This is emphasized text* this is not. 
+
+Is emphasis italics? No. There's a tag for italics too:
+
+```HTML
+<i>
+```
+
+It gives similar results but it's important to note they *mean* different things. You can then use this with CSS (which you'll learn later) to style em and i differently!
 
 Assuming you don't want your entire document to be emphasized then you need to have a way of telling the computer to stop emphasizing things.  Thankfully this is fairly simple as you just repeat the opening tag but if with a `/` character just before the closing bracket like so:
 
@@ -134,7 +140,7 @@ Third item
 Can you guess what this does? Give it a go!
 
 ```HTML
-<img src="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1024px-Firefox_logo%2C_2019.svg.png"/>
 ```
 
 The 'img' part is short for image but the rest of this is new to us so let's take a second to look at it more closely. 'src' is short for source and it tells the computer where to find the image to display.  See how all the text is inside the tag rather than outside it? That's what we call an attribute and it's used to provide additional details about how we want the computer to display something.  The format is usually like this
@@ -143,18 +149,34 @@ The 'img' part is short for image but the rest of this is new to us so let's tak
 <tag attributeName="attribute value"></tag>
 ```
 
+## Hyper Links
+
+Now for the the first letter in HTML, the hyperlink. You can use it to let your users navigate between pages. The href attribute tells the browser where to go and the bit between the tags is what the user will see in the text.
+
+```HTML
+ <a href="https://www.mozilla.org/en-GB/">Title</a> 
+```
+
+Which will look like <a href="https://www.mozilla.org/en-GB/">Title</a> 
+
 ## Basic elements in an HTML document
 
 Ok so a quick aside but there are some tags that you'll notice in every document.  You need them there for anything to work but you rarely write them yourself and all the templates you use in this course already contain them.
 
 ```HTML
 <html>
+    <head>
+    </head>
     <body>
     </body>
 </html>
 ```
 
-The 'html' tag is the first tag in a document, it's what tells the computer that we're writing HTML and not just a bunch of text. The 'body' tag basically tells the computer that we're starting the part of the document that contains the text we want to show to the user.  If this doesn't make sense then don't worry it will become much clearer when you encounter the 'head' tag in a future session.
+The 'html' tag is the first tag in a document, it's what tells the computer that we're writing HTML and not just a bunch of text. 
+
+The 'head' tag lets you set the set the title of the page that appears in the top of your browser/tab.
+
+The 'body' tag basically tells the computer that we're starting the part of the document that contains the text we want to show to the user.  If this doesn't make sense then don't worry it will become much clearer when you encounter the 'head' tag in a future session.
 
 ## What now?
 
