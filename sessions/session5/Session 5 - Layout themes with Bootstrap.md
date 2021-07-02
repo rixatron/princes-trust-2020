@@ -77,7 +77,7 @@ Open layout-with-bootstrap.html.
 	Add some javascript to load the `toast` plugin. This particular script tells us to make all `div` tags with the class `toast` to become toast messages using the plugin:-
 
 	```js
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
 	</script>
 	<script type="text/javascript">
 		function showToast() {
