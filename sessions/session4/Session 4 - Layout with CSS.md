@@ -1,7 +1,5 @@
 # Layout
 
-**View this in your browser: http://bit.ly/gswd-4**
-
 ## Styling Boxes
 
 ### 1. Box model
@@ -55,7 +53,6 @@ You will not need to edit the HTML in order to achieve this layout and the techn
 - Positioning
 - Float
 - Flexbox
-- CSS Grid Layout
 
 There are a few ways in which you could achieve some of these tasks, and there often isn’t a single right or wrong way to do things. Try a few different approaches and see which works best.
 
@@ -63,28 +60,16 @@ For more help try these links:
 
 - https://www.w3schools.com/csS/css3_flexbox.asp
 - https://www.w3schools.com/Css/css_navbar.asp
-- https://www.w3schools.com/csS/css_grid.asp
 
 
 # Integrate
 ## 4. YouTube
 
-Add this video to your site: https://www.youtube.com/watch?v=0zgtNDAEht4
-
-## 5. Instagram
-
-Add a post from this feed into your blog: https://www.instagram.com/p/B0iKhH4hgUZ/
+Add this video (or one of your choice) to your site: https://www.youtube.com/watch?v=0zgtNDAEht4 Click on the 'Share' button and select 'Embed'
 
 # Learning tools
 
 ## Useful links
 
-HTML cheatsheet: https://digital.com/tools/html-cheatsheet/
-CSS cheatsheet: https://www.onblastblog.com/css3-cheat-sheet/
-
-CodePen - useful tool for trying out code and viwing examples.
-https://codepen.io
-
-I found this nice example: https://codepen.io/ludmila-tretyakova/pen/VoaMzG
-
-HTML dog is similar but also has some good tutorials: https://htmldog.com/
+ - https://flexboxfroggy.com/ - A neat little game to practice the basics of flex box layout
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox - Quite a heavy weight but comprehensive tutorial on the flex-box layout system.
