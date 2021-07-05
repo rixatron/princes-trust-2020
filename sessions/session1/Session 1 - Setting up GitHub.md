@@ -1,7 +1,5 @@
 # Setting up GitHub 
 
-**View this in your browser: http://bit.ly/gswd-1**
-
 ## About this session
 In this session you'll create a GitHub account so that you can get the material we've prepared for you.
 
@@ -23,7 +21,7 @@ Before you can do anything else you'll need to sign up for a GitHub account if y
 ## 2. Fork the starter repository
 Now that you have an account you will need to copy the starting repository we have created to your account. This will allow you to make your own changes to it throughout the week. This concept of copying is called "forking" in GitHub.
 
-1. Go to the [starter repository](https://github.com/OmNomRarg/pt-web)
+1. Go to the [starter repository](https://github.com/rixatron/princes-trust-2020)
 2. Click the "Fork" button at the top right of the page. You'll need to wait a little while for it to copy
 3. You should now be taken to the page for your copy of the repository
     - If you accidentally close the browser at any point you can find your repository again by going to the [GitHub page](https://github.com/) whilst logged in. You'll see a list of repositories on the left, click the one that has your username in it
