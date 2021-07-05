@@ -1,13 +1,15 @@
 # CSS Stylings
 
-**View this in your browser: http://bit.ly/gswd-3**
-
 ## 0. Before you start
 
 To get started:
-1. Open up https://jsfiddle.net 
-2. Paste the contents of blog_example_with_themes.html into the HTML pane and press run
-3. Paste the contents of style.css into the CSS pane and press run again
+1. Open up our forked repository in https://codesandbox.io/ then open ./blog_example_no_styles.html
+2. Initially you will notice the page has no styles, we need to link our style.css file to the html page
+3. Add the following to line 12. This tells the browser to load our stylesheet
+```CSS 
+  <!-- The following line links your custom css -->
+	<link rel="stylesheet" href="style.css">
+```
 
 Hopefully you noticed what a big difference adding the styles made to how the page looked!  Have a look and see if you can spot the various places the colours in the CSS file show up.
 
@@ -28,10 +30,9 @@ h1 {
 ```
 `h1` is the tag that the style will be applied to, see if you can find the h1 tag in the HTML pane. `background-color` is the name of the property (or attribute) we want to change and `yellow` is the value we want to set.
 
-> Note: Don't forget the `;` it's really important!
+Note: Don't forget the `;` it's really important!
 
-> Note: Notice that all the attributes we're setting are surrounded by `{` `}`
-
+Note: Notice that all the attributes we're setting are surrounded by `{` `}`
 
 ## 1. Text styles
 
@@ -51,9 +52,7 @@ rgb
 
 **font-family**
 
-`p {
-  font-family: arial;
-}`
+`p { font-family: arial; }`
 
 The browser will only apply a font if it is available on the computer/phone/tablet the website is being accessed on. 
 There are only a certain number of fonts that are generally available across all devices and can therefore be used without much worry. 
@@ -61,15 +60,13 @@ These are the so-called web safe fonts. Check here for a list: https://www.cssfo
 
 You can use font stacks to specify fallbacks if your font is not available:
 
-`p {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-}`
+`p { font-family: "Trebuchet MS", Verdana, sans-serif; }`
 
 **font-size**
 
 There are a couple of different ways to set the font size but for the moment we're going to just be looking at the simplest one which is pixels.  Since there are multiple ways of setting the font size you have to put `px` after the number e.g. `20px;`
 
-Have a got at setting the font size yourself, if you get stuck then look at the example below.
+Have a go at setting the font size yourself, if you get stuck then look at hints below.
 
 Hint:
 
@@ -78,7 +75,7 @@ Look at the definition of CSS at the top of the page:
  - The attribute you want to set is `font-size`
  - The value we're setting is `20px`
 
-If you get stuck then you can look at the solution at the bottom of this file or just ask for help! : )
+If you get stuck then just ask for help! : )
 
 Note: You don't have to include the p { } but every time you can just put the font-size line below something else is another p { } block.
 
@@ -112,7 +109,6 @@ These styles apply to the `ul` and `ol` tags, so don't put them in the `p` block
 
 See here for a list of different list styles to try: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
 
-
 ## 3. Link styles
 
 `<p><a href="#">A simple link</a></p>`
@@ -128,7 +124,7 @@ You'll notice a few things as you explore the default styles.
 
 Try setting the following selectors to change the default styles
 
-``` 
+```CSS
 a {
 
 }
@@ -171,7 +167,7 @@ This selects all p tags.
 
 Uses the class attribute. You can also use multiple classes to combine styles.
 
-```
+```CSS
 <ul>
   <li class="first done">Create an HTML document</li>
   <li class="second done">Create a CSS style sheet</li>
@@ -179,7 +175,7 @@ Uses the class attribute. You can also use multiple classes to combine styles.
 </ul>
 ```
 
-```
+```CSS
 /* The element with the class "first" is bolded */
 .first {
   font-weight: bold;
@@ -194,7 +190,7 @@ Uses the class attribute. You can also use multiple classes to combine styles.
 
 Matches elements using their attributes. For example a list like this:
 
-```
+```html
 Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
 <ul>
   <li data-quantity="1kg" data-vegetable>Tomatoes</li>
@@ -209,7 +205,7 @@ Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
 ```
 
 Can be styled with CSS:
-```
+```CSS
 /* All elements with the attribute "data-vegetable"
    are given green text */
 [data-vegetable] {
@@ -234,7 +230,7 @@ You can combine selectors to make your style target a very specific element. It 
 
 So all headers could have the same font for example:
 
-```
+```CSS
 h1, h2, h3 {
   font-family: "Trebuchet MS", Verdana, sans-serif;
 }
@@ -242,7 +238,3 @@ h1, h2, h3 {
 
 There are also different ways of specifying combinations such as matching elements that are descendants of specific elements. For more examples see here:
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors
-
-# Solution to CSS problem
-
-`p { font-size: 20px }`
