@@ -31,7 +31,7 @@ GitHub can host a webpage for you. By enabling this you will be able to view you
 
 1. From your fork of the starter repository, click the "Settings" section near the top
 2. Scroll down to the "GitHub Pages" section
-3. In the "Source" dropdown choose "master branch"
+3. In the "Source" dropdown choose "main branch"
 4. You should now be able to go to your GitHub page. If you scroll back down to the GitHub pages settings you can get the url from there (it will say "Your site is published at..."). Click on the link
 5. You should now see a page with "Your blog!"
 
@@ -51,7 +51,7 @@ GitHub lets you edit files in the browser and see the changes after a few minute
 9. Press "Ctrl + S" to save changes which should immediately appear on the right web page view.
 10. To save the changes you need to commit them. Click on the Github icon on the far left menu which should bring up a small tab titled "Link to GitHub repository" and click "Link Sandbox".
 11. This should update the small tab on the left where you can make commits to your forked repository. You should see a textbox with a placeholder of "Summary (required)". Enter any summary you like in this textbox. 
-12. Check that "Commit directly to the master branch" option is selected and click "Commit changes"
+12. Check that "Commit directly to the main branch" option is selected and click "Commit changes"
 13. If you wait a few minutes you'll now be able to see the changes reflected in your blog page if you go to the url from step 4 in the previous section. In case you've forgotten:
     - From your fork of the starter repository, click the "Settings" section near the top, scroll down to the "GitHub Pages" section and click the link where it says "Your site is published at..."
 14. You should now see your page with the updated heading. If you don't see the change right away then don't worry, just give it a minute then try refreshing the page.
